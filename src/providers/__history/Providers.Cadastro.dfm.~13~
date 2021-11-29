@@ -1,0 +1,82 @@
+inherited ProvidersCadastro: TProvidersCadastro
+  OldCreateOrder = True
+  Height = 194
+  Width = 346
+  inherited FDPhysPgDriverLink: TFDPhysPgDriverLink
+    Left = 152
+    Top = 16
+  end
+  object qryPesquisa: TFDQuery
+    CachedUpdates = True
+    Connection = FDConnection
+    SQL.Strings = (
+      'select * from produto')
+    Left = 32
+    Top = 96
+    object qryPesquisaid: TIntegerField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object qryPesquisanome: TWideStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 50
+    end
+    object qryPesquisavalor: TFMTBCDField
+      FieldName = 'valor'
+      Origin = 'valor'
+      Precision = 64
+      Size = 0
+    end
+    object qryPesquisastatus: TSmallintField
+      FieldName = 'status'
+      Origin = 'status'
+    end
+    object qryPesquisaestoque: TLargeintField
+      FieldName = 'estoque'
+      Origin = 'estoque'
+    end
+  end
+  object qryRecordCount: TFDQuery
+    CachedUpdates = True
+    Connection = FDConnection
+    Left = 128
+    Top = 96
+    object qryRecordCountCOUNT: TLargeintField
+      FieldName = 'COUNT'
+    end
+  end
+  object qryCadastro: TFDQuery
+    CachedUpdates = True
+    Connection = FDConnection
+    SQL.Strings = (
+      'select * from produto')
+    Left = 216
+    Top = 96
+    object qryCadastroid: TIntegerField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object qryCadastronome: TWideStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 50
+    end
+    object qryCadastrovalor: TFMTBCDField
+      FieldName = 'valor'
+      Origin = 'valor'
+      Precision = 64
+      Size = 0
+    end
+    object qryCadastrostatus: TSmallintField
+      FieldName = 'status'
+      Origin = 'status'
+    end
+    object qryCadastroestoque: TLargeintField
+      FieldName = 'estoque'
+      Origin = 'estoque'
+    end
+  end
+end

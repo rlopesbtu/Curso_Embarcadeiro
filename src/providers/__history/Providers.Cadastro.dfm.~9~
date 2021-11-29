@@ -1,0 +1,27 @@
+inherited ProvidersCadastro: TProvidersCadastro
+  OldCreateOrder = True
+  Height = 194
+  Width = 346
+  object qryPesquisa: TFDQuery [0]
+    CachedUpdates = True
+    Left = 32
+    Top = 96
+  end
+  object qryRecordCount: TFDQuery [1]
+    CachedUpdates = True
+    Left = 144
+    Top = 96
+    object qryRecordCountCOUNT: TLargeintField
+      FieldName = 'COUNT'
+    end
+  end
+  object qryCadastro: TFDQuery [2]
+    CachedUpdates = True
+    Left = 240
+    Top = 96
+  end
+  inherited FDPhysPgDriverLink: TFDPhysPgDriverLink
+    Left = 136
+    Top = 16
+  end
+end

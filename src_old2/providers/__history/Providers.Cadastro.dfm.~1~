@@ -1,0 +1,25 @@
+inherited ProvidersCadastro: TProvidersCadastro
+  OldCreateOrder = True
+  Width = 555
+  object qryPesquisa: TFDQuery
+    CachedUpdates = True
+    Connection = FDConnection
+    Left = 424
+    Top = 48
+  end
+  object qryRecordCount: TFDQuery
+    CachedUpdates = True
+    Connection = FDConnection
+    Left = 320
+    Top = 48
+    object qryRecordCountCOUNT: TLargeintField
+      FieldName = 'COUNT'
+    end
+  end
+  object qryCadastro: TFDQuery
+    CachedUpdates = True
+    Connection = FDConnection
+    Left = 200
+    Top = 48
+  end
+end

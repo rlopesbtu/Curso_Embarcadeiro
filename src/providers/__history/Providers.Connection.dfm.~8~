@@ -1,0 +1,17 @@
+object ProvidersConnection: TProvidersConnection
+  OldCreateOrder = False
+  Height = 531
+  Width = 979
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=Curso_Pooled')
+    LoginPrompt = False
+    Left = 32
+    Top = 16
+  end
+  object FDPhysPgDriverLink: TFDPhysPgDriverLink
+    VendorHome = 'C:\Users\Ricardo\Documents\Curso Horse\rest\business'
+    Left = 120
+    Top = 16
+  end
+end
